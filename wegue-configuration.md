@@ -17,10 +17,10 @@ This describes the Wegue application configuration, which is modelled as JSON do
 | showCopyrightYear |  | Boolean value, whether the copyright year should be shown on the right side of the toolbar | `"showCopyrightYear": true` or `"showCopyrightYear": false` | 
 | mapZoom           | x | Initial zoom level of the map | `"mapZoom": 2` |
 | mapCenter         | x | Initial center of the map in map projection | `"mapCenter": [0, 0]` |
-| mapProjection     |   | Configuration object for CRS / projection used for the map | see [mapProjection](https://github.com/meggsimum/wegue/wiki/Wegue-configuration#mapprojection) |
-| modules           | x | Array of module configuration objects | See [modules](https://github.com/meggsimum/wegue/wiki/Module-configuration) |
-| mapLayers         | x | Array of map layer configuration objects | See [mapLayers](https://github.com/meggsimum/wegue/wiki/Map-layer-configuration#maplayers) |
-| projectionDefs    |   | Array of CRS / projection definition objects compatible to proj4js | See [projectionDefs](https://github.com/meggsimum/wegue/wiki/Wegue-configuration#projectiondefs) |
+| mapProjection     |   | Configuration object for CRS / projection used for the map | see [mapProjection](wegue-configuration?id=wegue-configuration) |
+| modules           | x | Array of module configuration objects | See [modules](module-configuration) |
+| mapLayers         | x | Array of map layer configuration objects | See [mapLayers](map-layer-configuration) |
+| projectionDefs    |   | Array of CRS / projection definition objects compatible to proj4js | See [projectionDefs](wegue-configuration?id=projectiondefs) |
 | tileGridDefs      |   | Array of tile grid definition objects | |
 
 ### projectionDefs
@@ -42,7 +42,7 @@ The property `mapProjection` defines the CRS, which is used by the map in your W
 
 | Property          | Mandatory | Meaning | Example |
 |-------------------|-----------|---------|---------|
-| code              | x | The code of the SRS to be used for the map. In case it is not `EPSG:4326` or `EPSG:3857` it has to be defined in the [projectionDefs](https://github.com/meggsimum/wegue/wiki/Wegue-configuration#projectiondefs) | `"code": "EPSG:28992"` |
+| code              | x | The code of the SRS to be used for the map. In case it is not `EPSG:4326` or `EPSG:3857` it has to be defined in the [projectionDefs](wegue-configuration?id=projectiondefs) | `"code": "EPSG:28992"` |
 | units             | x | The unit of the SRS | `"units": "m"` |
 | extent             | x | The validity extent for the SRS | `"extent": [-285401.920, 22598.080, 595401.920, 903401.920]` |
 
